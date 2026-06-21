@@ -1,46 +1,61 @@
 # Student Management API
 
-A RESTful API for managing student records built with Node.js, Express.js, MongoDB and MVC Architecture.
+A RESTful API built using **Node.js, Express.js, and MongoDB** for managing student records with secure authentication and production-level backend features.
 
 ## Features
 
-* Add Student
-* Get All Students
-* Get Student By ID
-* Update Student Details
-* Delete Student
-* MongoDB Database Integration
-* MVC Architecture
-* REST API
+* User Registration & Login
+* JWT Authentication & Refresh Tokens
+* Role-Based Access Control (RBAC)
+* Student CRUD Operations
+* Search, Filtering, Sorting & Pagination
+* File Uploads with Multer
+* Relationships & Populate
+* Aggregation & Indexing
+* Global Error Handling
+* Transactions
+* MongoDB Atlas Integration
 
 ## Tech Stack
 
 * Node.js
 * Express.js
-* MongoDB
-* Mongoose
-
-## Installation
-
-git clone <repository-url>
-cd student-management-api
-npm install
-
-## Run Project
-npm start
-(or)
-npm run dev
+* MongoDB & Mongoose
+* JWT
+* bcrypt
+* Multer
+* dotenv
 
 ## API Endpoints
 
-| Method | Endpoint          |
-| ------ | ----------------- |
-| GET    | /api/students     |
-| GET    | /api/students/:id |
-| POST   | /api/students     |
-| PUT    | /api/students/:id |
-| DELETE | /api/students/:id |
+### Authentication
+
+* `POST /users/register`
+* `POST /users/login`
+* `POST /users/refresh-token`
+
+### Students
+
+* `GET /students`
+* `GET /students/:id`
+* `POST /students`
+* `PUT /students/:id`
+* `DELETE /students/:id`
+* `POST /students/upload`
+
+## Installation
+
+```bash
+npm install
+npm start
+```
+
+
+## Live Demo
+
+**Render URL:** `https://student-management-backend-i297.onrender.com`
 
 ## Author
 
-Anusha Vemu
+**Anusha Vemu**
+GitHub: https://github.com/vemuanusha

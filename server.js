@@ -12,6 +12,9 @@ connectDB();
 
 const app = express();
 app.use(express.json());
+app.get("/", (req,res)=>{
+    res.send("Student Management API Running");
+});
 app.use("/students",studentRoutes);
 app.use("/user",userRoutes);
 app.use(errorHandler);

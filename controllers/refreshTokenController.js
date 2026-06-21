@@ -49,4 +49,4 @@ const refreshAccessToken = async(req,res) => {
     }
 }
 
-module.exports=refreshToken;
+module.exports=refreshAccessToken;
